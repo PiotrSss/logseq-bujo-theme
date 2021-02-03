@@ -171,6 +171,13 @@ h1.title {
 }
 
 
+/* checkbox */
+
+.form-checkbox {
+    border-radius: 2px;
+}
+
+
 /* RIGHT SIDEBAR */
 
 .dark-theme .cp__right-sidebar.is-open {
