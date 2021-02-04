@@ -21,6 +21,7 @@
 
 .white-theme,
 html[data-theme=light] {
+    --ls-search-background-color: #fff;
     --ls-secondary-background-color: #f7f6f4;
     --ls-block-properties-background-color: #f7f6f4;
     --ls-block-bullet-border-color: #dedede;
@@ -94,8 +95,27 @@ html[data-theme=dark] {
     transition: .3s;
 }
 
-.white-theme #head {
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, 0) 100%);
+#head {
+    background: none;
+}
+
+.cp__sidebar-main-content:before {
+    content: "";
+    display: block;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.white-theme .cp__sidebar-main-content:before {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, .7) 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.dark-theme .cp__sidebar-main-content:before {
+    background: linear-gradient(to bottom, rgba(24, 24, 24, .7) 0%, rgba(24, 24, 24, 0) 100%);
 }
 
 .white-theme #app-container {
@@ -104,14 +124,37 @@ html[data-theme=dark] {
     background-size: 25px 25px;
 }
 
-.dark-theme #head {
-    background: linear-gradient(to bottom, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, .8) 50%, rgba(24, 24, 24, 0) 100%);
-}
-
 .dark-theme #app-container {
     background-image: radial-gradient(#373737 5%, #181818 5%);
     background-position: 0 0;
     background-size: 25px 25px;
+}
+
+a[title="Go Back"],
+a[title="Go Forward"] {
+    border-radius: 3px;
+    opacity: 1;
+    transition: .3s;
+}
+
+.white-theme a[title="Go Back"],
+.white-theme a[title="Go Forward"] {
+    background: rgba(255, 255, 255, 1);
+}
+
+.white-theme a[title="Go Back"]:hover,
+.white-theme a[title="Go Forward"]:hover {
+    background: #f7f6f4;
+}
+
+.dark-theme a[title="Go Back"],
+.dark-theme a[title="Go Forward"] {
+    background: rgba(24, 24, 24, 1);
+}
+
+.dark-theme a[title="Go Back"]:hover,
+.dark-theme a[title="Go Forward"]:hover {
+    background: rgb(35, 35, 35);
 }
 
 .cp__sidebar-main-layout {
@@ -126,16 +169,35 @@ html[data-theme=dark] {
 
 /* search-bar */
 
+#search-wrapper div:first-child {
+    left: 10px;
+}
+
 #search>.inner {
     max-width: 100%;
+    border-radius: 4px;
+}
+
+.white-theme #search_field {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .7) 200px, rgba(255, 255, 255, 0) 100%);
+    transition: background .3s;
+}
+
+.dark-theme #search_field {
+    background: linear-gradient(to right, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, .7) 200px, rgba(24, 24, 24, 0) 100%);
+    transition: background .3s;
+}
+
+#search_field:focus {
+    background: var(--ls-search-background-color);
 }
 
 .white-theme #search_field:focus {
-    box-shadow: 3px 3px 6px -2px rgba(0, 0, 0, .1);
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, .8);
 }
 
 .dark-theme #search_field:focus {
-    box-shadow: 3px 3px 6px -2px rgba(255, 255, 255, .1);
+    box-shadow: 0px 0px 20px 0px rgba(18, 18, 18, .8);
 }
 
 
