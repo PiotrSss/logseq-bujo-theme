@@ -48,7 +48,7 @@ html[data-theme=dark] {
     --ls-block-properties-background-color: #272727;
     --ls-block-ref-link-text-color: #761a3f;
     --ls-search-background-color: var(--ls-primary-background-color);
-    --ls-border-color: #630e37;
+    --ls-border-color: #292323;
     --ls-guideline-color: #232323;
     --ls-menu-hover-color: var(--ls-secondary-background-color);
     --ls-primary-text-color: #ffe0a7;
@@ -88,18 +88,24 @@ html[data-theme=dark] {
     --color-level-6: #9e6889;
 }
 
-#head {
-    background: none;
-}
-
+.cp__header-logo,
 #head .repos {
     opacity: .3;
+    transition: .3s;
+}
+
+.white-theme #head {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, .8) 50%, rgba(255, 255, 255, 0) 100%);
 }
 
 .white-theme #app-container {
     background-image: radial-gradient(#e0e0e0 5%, #fff 5%);
     background-position: 0 0;
     background-size: 25px 25px;
+}
+
+.dark-theme #head {
+    background: linear-gradient(to bottom, rgba(24, 24, 24, 1) 0%, rgba(24, 24, 24, .8) 50%, rgba(24, 24, 24, 0) 100%);
 }
 
 .dark-theme #app-container {
@@ -115,6 +121,21 @@ html[data-theme=dark] {
 .dark-theme ::selection {
     background: rgb(193, 136, 177);
     background: #EA989F;
+}
+
+
+/* search-bar */
+
+#search>.inner {
+    max-width: 100%;
+}
+
+.white-theme #search_field:focus {
+    box-shadow: 3px 3px 6px -2px rgba(0, 0, 0, .1);
+}
+
+.dark-theme #search_field:focus {
+    box-shadow: 3px 3px 6px -2px rgba(255, 255, 255, .1);
 }
 
 
