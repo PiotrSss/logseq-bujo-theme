@@ -112,6 +112,11 @@ html[data-theme=dark] {
     background: none;
 }
 
+.dark-theme ::selection {
+    background: rgb(193, 136, 177);
+    background: #EA989F;
+}
+
 
 /* vertical lines */
 
