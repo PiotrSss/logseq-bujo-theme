@@ -265,6 +265,10 @@ h1.title {
     border-radius: 2px;
 }
 
+.dark-theme .form-checkbox {
+    box-shadow: 0 0 0px 2px #52373a;
+}
+
 
 /* RIGHT SIDEBAR */
 
