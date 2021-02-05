@@ -263,10 +263,53 @@ h1.title {
 
 .form-checkbox {
     border-radius: 2px;
+    z-index: 1;
+    position: relative;
+}
+
+.white-theme .form-checkbox {
+    background-color: #0075E1;
+    border-color: #0075E1;
 }
 
 .dark-theme .form-checkbox {
-    box-shadow: 0 0 0px 2px #52373a;
+    /* box-shadow: 0 0 0px 2px #52373a; */
+}
+
+.marker-switch {
+    border: none;
+    /* background: #3c3c3c; */
+    opacity: 1;
+    padding: 0;
+    height: 20px;
+    font-weight: 700;
+    margin: 0 5px 0 2px;
+    line-height: 20px;
+    transition: .3s;
+}
+
+.marker-switch {
+    margin-left: -23px;
+    padding-left: 24px;
+    padding-right: 14px;
+}
+
+.white-theme .marker-switch {
+    color: #433F38;
+    background: #eae8e0;
+}
+
+.white-theme .marker-switch:hover {
+    background: #dad1c1;
+}
+
+.dark-theme .marker-switch {
+    color: #000;
+    background: #52373a;
+}
+
+.dark-theme .marker-switch:hover {
+    background: #5d3e41;
 }
 
 
