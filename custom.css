@@ -90,6 +90,14 @@ html[data-theme=dark] {
     --color-level-6: #9e6889;
 }
 
+.white-theme textarea {
+    caret-color: #0075E1;
+}
+
+.dark-theme textarea {
+    caret-color: #cc515c;
+}
+
 .cp__header-logo,
 #head .repos {
     opacity: .3;
