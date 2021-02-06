@@ -28,6 +28,7 @@ html[data-theme=light] {
     --ls-block-bullet-color: rgba(67, 63, 56, 0.25);
     --ls-guideline-color: rgba(46, 27, 5, 0.08);
     --ls-primary-text-color: #433F38;
+    --ls-title-text-color: var(--ls-primary-text-color);
     --ls-link-text-color: #cc515c;
     --ls-link-text-hover-color: #EF515F;
     --ls-link-ref-text-color: #0075E1;
@@ -95,9 +96,24 @@ html[data-theme=dark] {
     transition: .3s;
 }
 
+#head .repos {
+    font-size: 12px;
+    font-weight: 700;
+}
+
 #head {
     background: none;
 }
+
+
+/* import icon */
+
+#head .ml-2.mr-1 svg {
+    height: 17px;
+}
+
+
+/***************/
 
 .cp__sidebar-main-content:before {
     content: "";
@@ -228,13 +244,15 @@ mark {
 }
 
 
-/* selected block page link */
+/* selected block or higlighted page link */
 
-.dark-theme .ls-block.selected .page-ref {
+.dark-theme .ls-block.selected .page-ref,
+.dark-theme mark .page-ref {
     color: #EEB8BD;
 }
 
-.dark-theme .ls-block.selected .page-ref:hover {
+.dark-theme .ls-block.selected .page-ref:hover,
+.dark-theme mark .page-ref:hover {
     color: #F2DDDF;
 }
 
