@@ -19,7 +19,7 @@ An example of how your `custom.css` file should look like if you decide to use C
 @import url('https://raw.githack.com/PiotrSss/logseq-bujo-theme/main/dark-coffee.css');
 @import url('https://raw.githack.com/PiotrSss/logseq-bujo-theme/main/light-sepia.css');
 ```
-
+Or copy content of these files into your `custom.css` if you want to have them available without internet connection.
 
 ## Real life examples
 
