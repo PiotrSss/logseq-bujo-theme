@@ -106,6 +106,18 @@ a[title="Go Forward"] {
 ***************************************************************/
 
 
+/* blocks with background */
+
+[style="background-color: rgb(73, 125, 70); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(83, 62, 125); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(120, 127, 151); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(151, 134, 38); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(73, 118, 123); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"],
+[style="background-color: rgb(121, 62, 62); padding-left: 6px; padding-right: 6px; color: rgb(255, 255, 255);"] {
+    border-radius: 3px;
+    padding: 5px 6px;
+}
+
 /* vertical lines */
 
 .block-children {
