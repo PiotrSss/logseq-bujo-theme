@@ -192,6 +192,10 @@ html[data-theme=dark] {
     background: rgba(97, 67, 55, .05);
 }
 
+.dark-theme .cp__right-sidebar .sidebar-item .close svg {
+    color: #776857;
+}
+
 
 /***************************************************************
 **************************** MISC ******************************
