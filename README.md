@@ -3,7 +3,18 @@ Custom light and dark themes for https://logseq.com/, inspired by Bullet Journal
 
 **If you'd like to support my work: https://paypal.me/piotrsss :)**
 
-## Installation guide
+
+## THIS REPO IS NO LONGER BEING MAINTAINED, USE THIS INSTEAD:
+
+[BuJo Themes configuration](https://piotrsss.github.io/logseq-tools/public/#/bujo-themes)
+ 
+---
+---
+---
+ 
+## OLD STUFF:
+
+### Installation guide
 
 1. Find file `custom.css` in your Logseq repo and remove all of the code.
 2. Paste this into your `custom.css`: `@import url('https://raw.githack.com/PiotrSss/logseq-bujo-theme/main/main.css');`
@@ -21,7 +32,7 @@ An example of how your `custom.css` file should look like if you decide to use C
 ```
 Or copy content of these files into your `custom.css` if you want to have them available without internet connection.
 
-## Real life examples
+### Real life examples
 
 Coffee:
 ![](https://raw.githubusercontent.com/PiotrSss/logseq-bujo-theme/main/logseq-dark-coffee.jpeg)
@@ -33,7 +44,7 @@ White:
 ![](https://raw.githubusercontent.com/PiotrSss/logseq-bujo-theme/main/logseq-light-white.jpeg)
 
 
-## Examples of all components
+### Examples of all components
 
 Coffee:
 ![](https://raw.githubusercontent.com/PiotrSss/logseq-bujo-theme/main/logseq-dark-coffee-full.jpeg)
